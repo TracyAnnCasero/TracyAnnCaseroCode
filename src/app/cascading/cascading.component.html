@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <div class="row">
+    <h1>
+    Angular Cascading dropdown
+    </h1>
+    </div>
+    <div class="row">
+     
+    <div class="form-group">
+    <label class="control-label" for="Country">Country:</label>
+    <select *ngIf="getCountries()" [(ngModel)]="selectedCountry" (change)="onSelectCountry($event.target.value)" class="form-control input-lg" id="country">
+    <option value="0">Select Country</option>
+    <option *ngFor="let country of getCountries()" value= {{country.id}}>{{country.name}}</option>
+    </select>
+    </div>
+     
+    <div class="form-group">
+    <label class="control-label" for="States">States:</label>
+    <select *ngIf="states" [(ngModel)]="selectedState" (change)="onSelectState($event.target.value)" class="form-control input-lg" id="state"> 
+    <!-- [(ngModel)]="selectedState" , I use [(ngModel)]="selectedState" coz I need it for *ngIf="!selectedState"  -->
+    <option value="0">Select State</option>
+    <option *ngFor="let state of states" value= {{state.id}}>{{state.name}}</option>
+    </select>
+    </div>
+     
+    <div class="form-group">
+    <label class="control-label" for="City">City:</label>
+    <select class="form-control input-lg" id="city">
+    <option *ngIf="!selectedState" value="0">Select City</option>
+    <!-- When [(ngModel)]="selectedState" is selected then value="0" will no longer appear coz of *ngIf="!selectedState" -->
+    <option *ngFor="let city of cities" value= {{city.id}}>{{city.name}}</option>
+    </select>
+    </div>
+    </div>
+</div>
+     
+
+
+<!-- PSEUDO
+1. this function    onSelectCountry    in country dropdown will need    ngModel selectedCountry    to display country When
+   selecting country , you have to put    this.selectedState = 0;    in    onSelectedCountry    to refresh
+   state dropdown coz it has    ngModel selectedState    in it.
+2. in city dropwdown it has    ngIf !selectedState    when selecting state in state dropdown the value="0"
+   will no longer appear coz of    ngIf !selectedState   -->

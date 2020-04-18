@@ -1,0 +1,111 @@
+<button class="btn btn-info btn-lg" (click)="openModal()">Add User</button> 
+
+<table class="table" style='border:solid;'>  
+    <thead class="thead-dark">  
+      <tr>  
+        <th>Key</th>  
+        <th>User Id</th>  
+        <th>User Name</th>  
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>  
+    </thead>  
+    <tbody>  
+      <tr *ngFor="let data of userArray">  
+        <td>{{ data._id }}</td> 
+        <td>{{ data.intUserId }}</td>  
+        <td>{{ data.strName }}</td>  
+        <td>  
+          <button  
+            (click)="[openModal(), getUsersById(data.intUserId)]"  
+            class="btn btn-danger"  
+          >  
+            Edit
+          </button>  
+        </td> 
+        <td>  
+          <button (click)="removeUsers(data._id)" class="btn btn-danger">  
+            Delete  
+          </button>  
+        </td>  
+        <!-- <td>  
+          <button  
+            (click)="getById(data.StudentID)"  
+            class="btn btn-danger">  
+            Edit  
+          </button>   
+        </td> 
+        <td>  
+          <button  
+            (click)="[openModal(), getById(data.StudentID)]"  
+            class="btn btn-danger">  
+            Edit W/ Modal 
+          </button>  
+        </td>  -->
+      </tr>  
+    </tbody>  
+  </table>  
+
+
+<div class="backdrop" [ngStyle]="{'display':display}">
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':display}"> 
+   <div class="modal-dialog modal-dialog-centered" role="document"> 
+   <div class="modal-content"> 
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">User</h5>
+      <button type="button" class="close" (click)="onCloseHandled()" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+<div class="modal-body">    
+    <div class="form-group">
+        <label for="usrid">Key:</label>
+        <input placeholder="Not Required" type="text" class="form-control" [(ngModel)]="user._id" id="usrid">
+    </div>
+    <div class="form-group">
+        <label for="usrid">User Id:</label>
+        <input placeholder="Not Required" type="text" class="form-control" [(ngModel)]="user.intUserId" id="usrid">
+    </div>
+    <div class="form-group">
+        <label for="usrname">User Name:</label>
+        <input placeholder="Required" type="text" class="form-control" [(ngModel)]="user.strName" id="usrname">
+        <!-- type="password" -->
+    </div>
+    <button (click)="addUsers()" class="btn btn-primary">  
+      SAVE 
+    </button>&nbsp; 
+    <button (click)="updateUsers()" class="btn btn-primary">  
+      Update 
+    </button>   
+
+</div> 
+<div class="modal-footer"> 
+  <button type="button" class="btn btn-default" (click)="onCloseHandled()" >Close</button> 
+</div> 
+</div>
+</div>
+</div>
+</div> 
+
+
+
+<!-- <div [ngStyle]="{'display':display}" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
