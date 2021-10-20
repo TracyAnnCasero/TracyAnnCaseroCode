@@ -21,6 +21,27 @@ import { BloomComponent } from './bloom/bloom.component';
 import { BlueComponent } from './blue/blue.component';
 import { BreezeComponent } from './breeze/breeze.component';
 import { CharmComponent } from './charm/charm.component';
+import { ChateauComponent } from './chateau/chateau.component';
+import { CheerComponent } from './cheer/cheer.component';
+import { CheerfulComponent } from './cheerful/cheerful.component';
+import { FieldComponent } from './field/field.component';
+import { GraceComponent } from './grace/grace.component';
+import { GrassComponent } from './grass/grass.component';
+import { Green2Component } from './green2/green2.component';
+import { GreenComponent } from './green/green.component';
+import { HillComponent } from './hill/hill.component';
+import { HopeComponent } from './hope/hope.component';
+import { JazzComponent } from './jazz/jazz.component';
+import { LaneComponent } from './lane/lane.component';
+import { LeafComponent } from './leaf/leaf.component';
+import { LightComponent } from './light/light.component';
+import { Light2Component } from './light2/light2.component';
+import { MezzaComponent } from './mezza/mezza.component';
+import { Mezza2Component } from './mezza2/mezza2.component';
+import { MplaceComponent } from './mplace/mplace.component';
+import { ParkComponent } from './park/park.component';
+import { PrincetonComponent } from './princeton/princeton.component';
+import { SeaComponent } from './sea/sea.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -44,7 +65,39 @@ const routes: Routes = [
   { path: 'bloom', component: BloomComponent },
   { path: 'blue', component: BlueComponent },
   { path: 'breeze', component: BreezeComponent },
-  { path: 'charm', component: CharmComponent }
+  { path: 'charm', component: CharmComponent },
+  { path: 'chateau', component: ChateauComponent },
+  { path: 'cheer', component: CheerComponent },
+  { path: 'cheerful', component: CheerfulComponent },
+  { path: 'field', component: FieldComponent },
+  { path: 'grace', component: GraceComponent },
+  { path: 'grass', component: GrassComponent },
+  { path: 'green2', component: Green2Component },
+  { path: 'green', component: GreenComponent },
+  { path: 'hill', component: HillComponent },
+  { path: 'hope', component: HopeComponent },
+  { path: 'jazz', component: JazzComponent },
+  { path: 'lane', component: LaneComponent },
+  { path: 'leaf', component: LeafComponent },
+  { path: 'light', component: LightComponent },
+  { path: 'light2', component: Light2Component },
+  { path: 'mezza', component: MezzaComponent },
+  { path: 'mezza2', component: Mezza2Component },
+  { path: 'mplace', component: MplaceComponent },
+  { path: 'park', component: ParkComponent },
+  { path: 'princeton', component: PrincetonComponent },
+  { path: 'sea', component: SeaComponent },
+  { path: 'shell', component: SeaComponent },
+  { path: 'shine', component: SeaComponent },
+  { path: 'shore', component: SeaComponent },
+  { path: 'smmile', component: SeaComponent },
+  { path: 'south', component: SeaComponent },
+  { path: 'spring', component: SeaComponent },
+  { path: 'style', component: SeaComponent },
+  { path: 'sun', component: SeaComponent },
+  { path: 'trees', component: SeaComponent },
+  { path: 'vine', component: SeaComponent },
+  { path: 'wind', component: SeaComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
