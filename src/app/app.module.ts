@@ -60,6 +60,7 @@ import { TreesComponent } from './trees/trees.component';
 import { VineComponent } from './vine/vine.component';
 import { WindComponent } from './wind/wind.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { ProfileComponent } from './profile/profile.component';
 //import { HttpClient } from '@angular/common/http';
 
 @NgModule({
@@ -116,7 +117,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     SunComponent,
     TreesComponent,
     VineComponent,
-    WindComponent
+    WindComponent,
+    ProfileComponent
   ],
   imports: [
     //HttpClient,

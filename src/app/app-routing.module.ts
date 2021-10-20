@@ -42,9 +42,11 @@ import { MplaceComponent } from './mplace/mplace.component';
 import { ParkComponent } from './park/park.component';
 import { PrincetonComponent } from './princeton/princeton.component';
 import { SeaComponent } from './sea/sea.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'profile', component: ProfileComponent },
   { path: 'cascading', component: CascadingComponent },
   { path: 'user', component: UserComponent },
   { path: 'register', component: RegisterComponent },
