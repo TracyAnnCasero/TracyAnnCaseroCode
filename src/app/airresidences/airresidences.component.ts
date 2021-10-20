@@ -14,6 +14,9 @@ export class AirresidencesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const tag = document.createElement('script'); 
+    tag.src = 'https://www.youtube.com/iframe_api'; 
+    document.body.appendChild(tag); 
   }
 
   //images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);

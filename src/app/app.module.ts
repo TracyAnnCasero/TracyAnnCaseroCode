@@ -59,6 +59,7 @@ import { SunComponent } from './sun/sun.component';
 import { TreesComponent } from './trees/trees.component';
 import { VineComponent } from './vine/vine.component';
 import { WindComponent } from './wind/wind.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 //import { HttpClient } from '@angular/common/http';
 
 @NgModule({
@@ -128,7 +129,8 @@ import { WindComponent } from './wind/wind.component';
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyBVKclYlJczlVhmPxWrgEPZUVHi0ukhjpI'
     }),
-    NgbModule
+    NgbModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
