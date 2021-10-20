@@ -1,0 +1,26 @@
+<div
+  class="form-control-wrapper"
+  *ngIf="fcn"
+  tabindex="-1"
+  [ngClass]="{ '-highlighted': isHighlighted }"
+  [class]="fromParentClass"
+>
+  <ng-content></ng-content>
+  <img
+    class="form-control-wrapper__excl-mark"
+    src="assets/images/icons/error.svg"
+    (mouseover)="showError = true"
+    (mouseout)="showError = false"
+  />
+  <div class="form-control-wrapper__error" *ngIf="showError">
+    {{ getError() }}
+  </div>
+
+  <!--<div [ngClass]="errorClass" class="m-1 text-danger d-flex align-items-start" *ngIf="isHighlighted && fieldErrors?.length > 0">-->
+  <!--  &lt;!&ndash;  <i class="mdi mdi-alert-circle mt-1 mr-1"></i>&ndash;&gt;-->
+  <!--  <ng-container *ngFor="let error of fieldErrors; last as isLast">-->
+  <!--    {{ error }}-->
+  <!--    <ng-container *ngIf="!isLast"><br></ng-container>-->
+  <!--  </ng-container>-->
+  <!--</div>-->
+</div>

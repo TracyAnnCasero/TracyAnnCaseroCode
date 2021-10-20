@@ -61,6 +61,7 @@ import { VineComponent } from './vine/vine.component';
 import { WindComponent } from './wind/wind.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { ProfileComponent } from './profile/profile.component';
+import { SharedModule } from './shared-folder/shared.module';
 //import { HttpClient } from '@angular/common/http';
 
 @NgModule({
@@ -132,7 +133,8 @@ import { ProfileComponent } from './profile/profile.component';
       apiKey:'AIzaSyBVKclYlJczlVhmPxWrgEPZUVHi0ukhjpI'
     }),
     NgbModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
