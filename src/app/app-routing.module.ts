@@ -103,7 +103,7 @@ const routes: Routes = [
   { path: 'shell', component: ShellComponent },
   { path: 'shine', component: ShineComponent },
   { path: 'shore', component: ShoreComponent },
-  { path: 'smmile', component: SmileComponent },
+  { path: 'smile', component: SmileComponent },
   { path: 'south', component: SouthComponent },
   { path: 'spring', component: SpringComponent },
   { path: 'style', component: StyleComponent },
