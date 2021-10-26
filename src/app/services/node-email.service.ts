@@ -20,7 +20,7 @@ export class NodeEmailService {
   }; 
 
 
-  sendEmail(url: string, data: any) { 
+  sendEmail(url: string, data: any): Observable<any> { 
     return this.http.post(url, data, this.httpOptions); 
   } 
 

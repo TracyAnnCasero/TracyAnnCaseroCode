@@ -62,6 +62,7 @@ import { WindComponent } from './wind/wind.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { ProfileComponent } from './profile/profile.component';
 import { SharedModule } from './shared-folder/shared.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 //import { HttpClient } from '@angular/common/http';
 
 @NgModule({
@@ -122,6 +123,7 @@ import { SharedModule } from './shared-folder/shared.module';
     ProfileComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     //HttpClient,
     FormsModule,//added for ngModel
     ReactiveFormsModule,//added for form group

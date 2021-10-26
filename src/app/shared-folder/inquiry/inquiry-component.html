@@ -38,7 +38,8 @@
                  formControlName="mobile" placeholder="+6328107300"
                  [ngClass]="{'input-error': mobile.invalid && mobile.touched }">
 
-          <small class="text-danger" *ngIf="mobile.hasError('required') && mobile.touched">This field is required.</small>
+          <small class="text-danger pr-5" *ngIf="mobile.hasError('required') && mobile.touched">This field is required.</small>
+          <small class="text-danger" *ngIf="mobile.invalid && mobile.touched">This field require numbers only.</small>
         <!-- </app-form-control> -->
       </div>
     </div>
@@ -58,20 +59,43 @@
       <div class="col-sm-12 form-group formAddress">
         <label for="exampleInputEmail1">Country*</label>
         <!-- <app-form-control> -->
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+
+          <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                  formControlName="country" placeholder="Select a Country"
+                 [ngClass]="{'input-error': country.invalid && country.touched }"> -->
+
+               <select 
+                 class="form-control"
+                 formControlName="country"
+                 placeholder="Select a Country"
                  [ngClass]="{'input-error': country.invalid && country.touched }">
+                <option *ngFor="let c of listOfCountries" [ngValue]="c.name">{{c.name}}</option>
+               </select>
+              
+               <!-- <ng-select
+                 formControlName="country"
+                 [items]="listOfCountries"
+                 bindLabel="name"
+                 bindValue="name"
+                 placeholder="Select a Country"
+                 [ngClass]="{'input-error': country.invalid && country.touched }"
+                >
+              </ng-select> -->
 
           <small class="text-danger" *ngIf="country.hasError('required') && country.touched">This field is required.</small>
         <!-- </app-form-control> -->
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pt-3">
       <div class="col-sm-12 form-group formAddress">
-        <button type="button" [disabled]="form.invalid" class="btn btn-primary btn-lg btn-block nextBtn" (click)="register()">Submit</button>
+        <button type="button" [disabled]="form.invalid || busy" class="btn btn-primary btn-lg btn-block nextBtn" (click)="register()">Submit</button>
       </div>
     </div>
+    <div [ngBusy]="{ busy: busy, disableAnimation: true, message: 'Loading...' }"></div>
   </div>
   </div>
+
 </div>
+
 </form>
+
