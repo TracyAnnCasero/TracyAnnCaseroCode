@@ -43,6 +43,17 @@ import { ParkComponent } from './park/park.component';
 import { PrincetonComponent } from './princeton/princeton.component';
 import { SeaComponent } from './sea/sea.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ShellComponent } from './shell/shell.component';
+import { ShineComponent } from './shine/shine.component';
+import { ShoreComponent } from './shore/shore.component';
+import { SmileComponent } from './smile/smile.component';
+import { SouthComponent } from './south/south.component';
+import { SpringComponent } from './spring/spring.component';
+import { StyleComponent } from './style/style.component';
+import { SunComponent } from './sun/sun.component';
+import { TreesComponent } from './trees/trees.component';
+import { WindComponent } from './wind/wind.component';
+import { VineComponent } from './vine/vine.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -89,17 +100,17 @@ const routes: Routes = [
   { path: 'park', component: ParkComponent },
   { path: 'princeton', component: PrincetonComponent },
   { path: 'sea', component: SeaComponent },
-  { path: 'shell', component: SeaComponent },
-  { path: 'shine', component: SeaComponent },
-  { path: 'shore', component: SeaComponent },
-  { path: 'smmile', component: SeaComponent },
-  { path: 'south', component: SeaComponent },
-  { path: 'spring', component: SeaComponent },
-  { path: 'style', component: SeaComponent },
-  { path: 'sun', component: SeaComponent },
-  { path: 'trees', component: SeaComponent },
-  { path: 'vine', component: SeaComponent },
-  { path: 'wind', component: SeaComponent },
+  { path: 'shell', component: ShellComponent },
+  { path: 'shine', component: ShineComponent },
+  { path: 'shore', component: ShoreComponent },
+  { path: 'smmile', component: SmileComponent },
+  { path: 'south', component: SouthComponent },
+  { path: 'spring', component: SpringComponent },
+  { path: 'style', component: StyleComponent },
+  { path: 'sun', component: SunComponent },
+  { path: 'trees', component: TreesComponent },
+  { path: 'vine', component: VineComponent },
+  { path: 'wind', component: WindComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true })],
