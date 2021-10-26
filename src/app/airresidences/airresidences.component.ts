@@ -29,9 +29,7 @@ export class AirresidencesComponent implements OnInit {
 
   register() {
     this.nes.sendEmail("https://tracywebsiteapp.herokuapp.com/sendmail", null).subscribe((res) => {
-      alert('success');
     }, error => {
-      alert('error');
     })
   }
 
