@@ -1,0 +1,554 @@
+body, html {
+    margin: 0;
+  }
+  #box {
+    /* The box that will responsively resize */
+    /* border: 10px solid #000; */
+    position: relative;
+    border-bottom: 13px solid #dd9a61;
+  }
+  /* #box img {
+    display: block;
+  } */
+  #box .static {
+    /* The static image helps responsively resizing the bounding box correctly */
+    width: 100%;
+    height: auto;
+  }
+
+  #box .premier {
+    /* Placing the cat absolutely and with percentage values makes it responsive within the bounding box */
+    position: absolute;
+    bottom: 7%;
+    left: 4%;
+    width: 8%;
+    height: auto;
+  }
+
+  #box .premier_air {
+    position: absolute;
+    bottom: 7%;
+    top: 50%;
+    left: 50%;
+    height: auto;
+  }
+
+/* ----------------------------------------------------------------------------- */
+
+.twentysixpoint {
+    line-height: 26pt;
+}
+
+@media all and (max-width: 2000px) { /* screen size until 1200px */
+    .AirTxt {
+        width: 100%;
+        height: auto;
+        line-height:28pt;
+        font-size: 18px;
+        font-weight: 520;
+    }
+    .firstP {
+        color:#dd9a61;
+        font-size:45px
+    }
+    .secondP {
+        color:white;
+        line-height: 24pt;
+        font-size:17px
+    }
+    .landmark {
+        position: relative;
+        text-align: center;
+        background-color: #504d4a;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .landmarkChild {
+        top: 10%;
+        left: 29%;
+        width: 40%;
+        position: absolute;
+    }
+
+    /* this is for the second part*/
+    #box1 .static {
+        width: 100%;
+        height: auto;
+    }
+
+    #box2 {
+        position: relative;
+        background-color: rgb(53, 51, 49);
+        width: 100%;
+        height: 800px;
+    }
+    #box2 .static {
+        position: absolute;
+        width: 60%;
+        height: 77%;
+        left: 19%;
+        top: 18%;
+    }
+    #box2 .vicinityLogo {
+        position: absolute;
+        left: 46%;
+        top: 5%;
+    }
+    #box2 .vicinityText {
+        position: absolute;
+        left: 42%;
+        top: 10%;
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+    }
+
+/* this only applies when the object inside relative has already width and height */
+.mainAmenities {
+    position: relative;
+    width: 95%;
+    height: 850px;
+}
+.mainAmenities .amenities {
+    position: absolute;
+    width: 100%;
+    top: 18%;
+    left: 2.5%;
+}
+.mainAmenities .amenitiesLogo {
+    position: absolute;
+    left: 49%;
+    top: 5%;
+}
+.mainAmenities .amenitiesText {
+    position: absolute;
+    left:46%;
+    top: 11%;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.mainModelUnits {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-color: rgb(53, 51, 49);
+}
+.mainModelUnits .modelunits {
+    position: absolute;
+    width: 95%;
+    top: 19%;
+    left: 2.5%;
+}
+.mainModelUnits .static1 {
+    width: 100%;
+    height: 650px;
+}
+.mainModelUnits .modelunitsLogo {
+    position: absolute;
+    left: 47%;
+    top: 5%;
+}
+.mainModelUnits .modelunitsText {
+    position: absolute;
+    left:43%;
+    top: 11%;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+/* -----------------------------price range------------------------------------*/
+.pricerangeContainer {
+    background: #214b82;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.pricerangeTxt {
+    /* width: 100%;
+    height: auto; */
+    margin-top: 2%;
+    text-align: center;
+    line-height: 40pt;
+    font-size: 30px;
+    font-weight: bolder;
+    color:white;
+}
+.twentysixpoint1 {
+    margin-top: 2%;
+    line-height: 40pt;
+    font-size: 30px;
+    font-weight: bolder;
+    color:white;
+}
+.twentysixpoint2 {
+    margin-top: -1%;
+    line-height: 40pt;
+    font-size: 17px;
+    font-weight: 700;
+    color:white;
+}
+
+}
+@media all and (max-width: 1010px) { /* screen size until 1000px */
+    .AirTxt {
+        width: 100%;
+        height: auto;
+        line-height: 28pt;
+        font-size: 18px;
+        font-weight: 520;
+    }
+
+    .firstP {
+        color:#dd9a61;
+        font-size:35px
+    }
+    .secondP {
+        color:white;
+        line-height: 22pt;
+        font-size:15px
+    }
+    .landmark {
+        position: relative;
+        text-align: center;
+        background-color: #504d4a;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .landmarkChild {
+        top: 12%;
+        left: 25%;
+        width: 50%;
+        position: absolute;
+    }
+
+    /* this is for the second part*/
+    #box2 {
+        position: relative;
+        background-color: rgb(53, 51, 49);
+        width: 100%;
+        height: 600px;
+    }
+    #box2 .static {
+        position: absolute;
+        width: 95%;
+        height: 73%;
+        left: 2.3%;
+        top: 22%;
+    }
+    #box2 .vicinityLogo {
+        position: absolute;
+        left: 45%;
+        top: 5%;
+    }
+    #box2 .vicinityText {
+        position: absolute;
+        left: 41.5%;
+        top: 13%;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
+
+/* this only applies when the object inside relative has already width and height */
+.mainAmenities {
+    width: 100%;
+    height: 460px;
+}
+.mainAmenities .amenities {
+    position: relative;
+    width: 95%;
+    top: 22%;
+    left: 2.5%;
+}
+.mainAmenities .static {
+    width: 100%;
+    height: 350px;
+}
+.mainAmenities .amenitiesLogo {
+    position: absolute;
+    width: 3%;
+    left: 46%;
+    top: 5%;
+}
+.mainAmenities .amenitiesText {
+    position: absolute;
+    left:43%;
+    top: 13%;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.mainModelUnits {
+    width: 100%;
+    height: 495px;
+    background-color: rgb(53, 51, 49);
+}
+.mainModelUnits .modelunits {
+    position: relative;
+    width: 95%;
+    top: 25%;
+    left: 2.5%;
+}
+.mainModelUnits .static1 {
+    width: 100%;
+    height: 350px;
+}
+.mainModelUnits .modelunitsLogo {
+    position: absolute;
+    width: 3;
+    left: 47%;
+    top: 6%;
+}
+.mainModelUnits .modelunitsText {
+    position: absolute;
+    left:44%;
+    top: 15%;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+/* -----------------------------price range------------------------------------*/
+.pricerangeContainer {
+    background: #214b82;
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+.pricerangeTxt {
+    text-align: center;
+    font-size: 25px;
+    color:white;
+}
+.twentysixpoint1 {
+    /* margin-top: 5%; */
+    font-size: 25px;
+    color:white;
+}
+.twentysixpoint2 {
+    margin-top: -2%;
+    font-size: 15px;
+    color:white;
+}
+
+}
+@media all and (max-width: 640px) { /* screen size until 500px */
+    .AirTxt {
+        width: 100%;
+        height: auto;
+        line-height: 28pt;
+        font-size: 18px;
+        font-weight: 520;
+    }
+
+    .firstP {
+        color:#dd9a61;
+        font-size:25px
+    }
+    .secondP {
+        color:white;
+        line-height: 22pt;
+        font-size:15px
+    }
+    .landmark {
+        position: relative;
+        text-align: center;
+        background-color: #504d4a;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .landmarkChild {
+        top: 13%;
+        left: 2%;
+        width: 95%;
+        position: absolute;
+    }
+    /* body {
+        font-size: 0.9em;
+        } */
+    #box2 {
+        position: relative;
+        background-color: rgb(53, 51, 49);
+        width: 100%;
+        height: 470px;
+    }
+    #box2 .static {
+        position: absolute;
+        width: 95%;
+        height: 74%;
+        left: 2.3%;
+        top: 22%;
+    }
+    #box2 .vicinityLogo {
+        position: absolute;
+        left: 45%;
+        top: 5%;
+    }
+    #box2 .vicinityText {
+        position: absolute;
+        left: 38.5%;
+        top: 13%;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
+
+/* this only applies when the object inside relative has already width and height */
+.mainAmenities {
+    /* position: relative; */
+    width: 100%;
+    height: 460px;
+}
+.mainAmenities .amenities {
+    position: relative;
+    width: 95%;
+    top: 22%;
+    left: 2.5%;
+}
+.mainAmenities .static {
+    width: 100%;
+    height: 350px;
+}
+.mainAmenities .amenitiesLogo {
+    position: absolute;
+    width: 6.5%;
+    left: 46%;
+    top: 5%;
+}
+.mainAmenities .amenitiesText {
+    position: absolute;
+    left:40%;
+    top: 13%;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.mainModelUnits {
+    width: 100%;
+    height: 495px;
+    background-color: rgb(53, 51, 49);
+}
+.mainModelUnits .modelunits {
+    position: relative;
+    width: 95%;
+    top: 25%;
+    left: 2.5%;
+}
+.mainModelUnits .static1 {
+    width: 100%;
+    height: 350px;
+}
+.mainModelUnits .modelunitsLogo {
+    position: absolute;
+    width: 6.5%;
+    left: 47%;
+    top: 6%;
+}
+.mainModelUnits .modelunitsText {
+    position: absolute;
+    left:39%;
+    top: 14%;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+/* -----------------------------price range------------------------------------*/
+.pricerangeContainer {
+    background: #214b82;
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+.pricerangeTxt {
+    text-align: center;
+    font-size: 20px;
+    color:white;
+}
+.twentysixpoint1 {
+    margin-top: -5%;
+    font-size: 20px;
+    text-align: center;
+    color:white;
+}
+.twentysixpoint2 {
+    margin-top: -5%;
+    font-size: 15px;
+    text-align: center;
+    color:white;
+}
+
+
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* -----------------------------form------------------------------------*/
+.formContainer {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    text-align: center;
+}
+.containerForm {
+    margin-top: 50px;
+}
+.formHeader {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.formHeader1 {
+    text-align: center;
+    font-size: 25px;
+}
+.formFullName {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    color:black;
+    font-family: "Times New Roman", Times, serif;
+}
+.formAddress {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    color:black;
+    font-family: "Times New Roman", Times, serif;
+}
+.formEmail {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    color:black;
+    font-family: "Times New Roman", Times, serif;
+}
+.formTelephone {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    color:black;
+    font-family: "Times New Roman", Times, serif;
+}
+.nextBtn {
+    background-color: #dd9a61 !important;
+    border-color: #dd9a61;
+}
+
+
+
+
