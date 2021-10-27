@@ -62,7 +62,8 @@ export class InquiryComponent implements OnInit {
       //   console.log(res)
       //   this.busy = null; 
       // })
-      this.busy = this.nes.sendEmail("https://tracywebsiteapp.herokuapp.com/sendmail", payload).subscribe((res) => {
+      this.busy = this.nes.sendEmail("https://rocky-mountain-83203.herokuapp.com/sendmail", payload).subscribe((res) => {
+      // this.busy = this.nes.sendEmail("https://tracywebsiteapp.herokuapp.com/sendmail", payload).subscribe((res) => {
         swal.fire(
           'Good job!',
           'Successfully Send to the Agent!',
@@ -74,7 +75,6 @@ export class InquiryComponent implements OnInit {
           icon: 'error',
           title: 'Oops...',
           text: 'Something went wrong!',
-          footer: '<a href="">Why do I have this issue?</a>'
         })
         this.busy = null; 
       })
