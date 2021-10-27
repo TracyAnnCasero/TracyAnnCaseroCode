@@ -56,6 +56,11 @@ import { WindComponent } from './wind/wind.component';
 import { VineComponent } from './vine/vine.component';
 
 const routes: Routes = [
+  {
+    path: "",
+    component: PropertiesComponent,
+    pathMatch: 'full'
+  },
   { path: 'home', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'cascading', component: CascadingComponent },
